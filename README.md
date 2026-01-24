@@ -24,11 +24,13 @@ Perfect for writing, note-taking, and lightweight content editing with persisten
 
 ## Demo
 
+Check out the live demo here: [Blank Editor Demo](https://puni9869.github.io/blank-editor/)
+
 > Add a screenshot or GIF here to showcase the editor in action.
+
 ![img.png](screenshots/img.png)
-![img_1.png](screenshots%2Fimg_1.png)
-![img_2.png](screenshots%2Fimg_2.png)
----
+![img_1.png](screenshots/img_1.png)
+___
 
 ## Installation
 
