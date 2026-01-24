@@ -69,8 +69,7 @@ body {
   -webkit-text-size-adjust: 100%;
   background: oklch(100% 0 0);
   color: oklch(14.1% 0.005 285.823);
-  font-family:
-    -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 
   /* premium text rendering */
   -webkit-font-smoothing: antialiased;
