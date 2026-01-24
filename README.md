@@ -25,7 +25,8 @@ Perfect for writing, note-taking, and lightweight content editing with persisten
 ## Demo
 
 > Add a screenshot or GIF here to showcase the editor in action.
-
+![img.png](screenshots/img.png)
+![img_1.png](screenshots%2Fimg_1.png)
 ---
 
 ## Installation
