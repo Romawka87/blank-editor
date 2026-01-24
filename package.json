@@ -1,0 +1,64 @@
+{
+  "name": "blank-editor",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A minimal, distraction-free rich text editor built with TipTap.",
+  "license": "MIT",
+  "author": "Punit Inani",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/puni9869/blank-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/puni9869/blank-editor/issues"
+  },
+  "homepage": "https://github.com/puni9869/blank-editor#readme",
+  "keywords": [
+    "editor",
+    "tiptap",
+    "rich-text",
+    "writing",
+    "minimal",
+    "prosemirror",
+    "open-source",
+    "text-editor",
+    "wysiwyg",
+    "markdown",
+    "note-taking",
+    "productivity",
+    "content-editor",
+    "web-editor",
+    "frontend",
+    "javascript",
+    "typescript",
+    "editable",
+    "distraction-free"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "lint": "eslint . --max-warnings=0",
+    "lint:fix": "eslint . --fix",
+    "clean": "rm -rf node_modules dist .vite"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.1.0",
+    "prettier": "^3.8.1",
+    "vite": "^7.2.4"
+  },
+  "dependencies": {
+    "@tiptap/core": "^3.17.0",
+    "@tiptap/extension-highlight": "^3.17.0",
+    "@tiptap/extension-placeholder": "^3.17.0",
+    "@tiptap/extension-typography": "^3.17.0",
+    "@tiptap/starter-kit": "^3.17.0"
+  }
+}
