@@ -1,40 +1,40 @@
-import { Editor } from '@tiptap/core'
-import StarterKit from '@tiptap/starter-kit'
-import Placeholder from '@tiptap/extension-placeholder'
-import Highlight from '@tiptap/extension-highlight'
-import Typography from '@tiptap/extension-typography'
+import { Editor } from '@tiptap/core';
+import StarterKit from '@tiptap/starter-kit';
+import Placeholder from '@tiptap/extension-placeholder';
+import Highlight from '@tiptap/extension-highlight';
+import Typography from '@tiptap/extension-typography';
 
-const STORAGE_KEY = 'blank-editor:v1'
+const STORAGE_KEY = 'blank-editor:v1';
 
 /* --------------------
    Storage helpers
 -------------------- */
 function loadContent() {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY)
-    return raw ? JSON.parse(raw) : null
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : null;
   } catch (err) {
-    console.warn('Failed to load editor content', err)
-    return null
+    console.warn('Failed to load editor content', err);
+    return null;
   }
 }
 
 function saveContent(editor) {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(editor.getJSON()))
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(editor.getJSON()));
   } catch (err) {
     // storage full / private mode / quota exceeded
-    console.warn('Failed to save editor content', err)
+    console.warn('Failed to save editor content', err);
   }
 }
 
 /* --------------------
    Editor bootstrap
 -------------------- */
-const element = document.querySelector('#editor')
+const element = document.querySelector('#editor');
 
 if (!element) {
-  throw new Error('Editor mount element (#editor) not found')
+  throw new Error('Editor mount element (#editor) not found');
 }
 
 const editor = new Editor({
@@ -51,7 +51,6 @@ const editor = new Editor({
     }),
 
     Placeholder.configure({ placeholder: 'Start writing…' }),
-
     Highlight,
     Typography,
   ],
@@ -71,13 +70,13 @@ const editor = new Editor({
   },
 
   onUpdate({ editor }) {
-    saveContent(editor)
+    saveContent(editor);
   },
-})
+});
 
 /* --------------------
    Optional: expose for debugging
 -------------------- */
 if (import.meta.env?.DEV) {
-  window.editor = editor
+  window.editor = editor;
 }
