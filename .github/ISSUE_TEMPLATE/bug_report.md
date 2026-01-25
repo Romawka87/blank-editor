@@ -1,9 +1,9 @@
 ---
 name: Bug report
 about: Report a problem with Blank Editor
-title: ""
+title: ''
 labels: bug
-assignees: ""
+assignees: ''
 ---
 
 **Describe the bug**

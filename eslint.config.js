@@ -1,14 +1,14 @@
-import js from "@eslint/js";
-import globals from "globals";
-import prettier from "eslint-config-prettier";
+import js from '@eslint/js'
+import globals from 'globals'
+import prettier from 'eslint-config-prettier'
 
 export default [
   {
-    ignores: ["node_modules/**", "dist/**", "build/**", "coverage/**"],
-    files: ["**/*.{js,mjs,cjs}"],
+    ignores: ['node_modules/**', 'dist/**', 'build/**', 'coverage/**'],
+    files: ['**/*.{js,mjs,cjs}'],
     languageOptions: {
-      ecmaVersion: "latest",
-      sourceType: "module",
+      ecmaVersion: 'latest',
+      sourceType: 'module',
       globals: {
         ...globals.browser,
         ...globals.node,
@@ -16,17 +16,17 @@ export default [
     },
     rules: {
       // style & correctness
-      "no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
-      "no-console": "off",
-      "prefer-const": "error",
-      eqeqeq: ["error", "always"],
+      'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+      'no-console': 'off',
+      'prefer-const': 'error',
+      eqeqeq: ['error', 'always'],
 
       // sanity
-      "no-implicit-globals": "error",
-      "no-var": "error",
+      'no-implicit-globals': 'error',
+      'no-var': 'error',
     },
   },
 
   js.configs.recommended,
   prettier, // must be LAST
-];
+]
