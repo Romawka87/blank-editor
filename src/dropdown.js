@@ -3,7 +3,7 @@ async function doAction(editor, t) {
     return;
   }
   switch (t?.target?.id) {
-    case 'new' :
+    case 'new':
     case 'clear':
       editor?.commands?.clearContent();
       editor?.commands?.focus();
@@ -23,15 +23,15 @@ export function loadMenu(editor) {
   const btn = document.querySelector('.dots-btn');
   const menu = document.querySelector('.dropdown-menu');
 
-  btn.addEventListener('click', (e) => {
+  btn.addEventListener('click', e => {
     e.stopPropagation();
     menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
   });
 
   ['copy', 'clear', 'new'].forEach(action => {
     const elm = document.querySelector(`#${action}`);
-    elm.addEventListener('click', async (e) => await doAction(editor, e));
+    elm.addEventListener('click', async e => await doAction(editor, e));
   });
 
-  document.addEventListener('click', () => menu.style.display = 'none');
+  document.addEventListener('click', () => (menu.style.display = 'none'));
 }

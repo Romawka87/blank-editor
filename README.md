@@ -8,7 +8,6 @@
   A minimal, premium-grade text editor for clean writing and editing.
 </p>
 
-
 <p align="center">
   <img src="https://img.shields.io/github/contributors/puni9869/blank-editor" alt="Contributors" />
   <img src="https://img.shields.io/github/issues/puni9869/blank-editor" alt="Issues" />
@@ -16,7 +15,6 @@
   <img src="https://img.shields.io/github/license/puni9869/blank-editor" alt="License" />
   <img src="https://img.shields.io/github/last-commit/puni9869/blank-editor" alt="Last Commit" />
 </p>
-
 
 ---
 
