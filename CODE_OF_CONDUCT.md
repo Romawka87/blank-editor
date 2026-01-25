@@ -1,4 +1,3 @@
-
 # Code of Conduct
 
 ## Our Pledge
@@ -34,6 +33,7 @@ Project maintainers are responsible for clarifying standards and taking appropri
 ## Scope
 
 This Code of Conduct applies within all project spaces, including:
+
 - GitHub issues
 - Pull requests
 - Discussions

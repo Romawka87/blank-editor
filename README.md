@@ -30,7 +30,8 @@ Check out the live demo here: [Blank Editor Demo](https://puni9869.github.io/bla
 
 ![img.png](screenshots/img.png)
 ![img_1.png](screenshots/img_1.png)
-___
+
+---
 
 ## Installation
 
@@ -38,7 +39,7 @@ ___
 git clone https://github.com/puni9869/blank-editor.git
 cd blank-editor
 npm install
-````
+```
 
 ---
 
@@ -73,10 +74,10 @@ npm run lint:fix     # Auto-fix linting issues
 
 We ❤️ contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
-* Fork the repo
-* Create a new branch (`feature/your-feature`)
-* Submit pull requests for bug fixes or new features
-* Ensure `npm run lint` passes before submitting
+- Fork the repo
+- Create a new branch (`feature/your-feature`)
+- Submit pull requests for bug fixes or new features
+- Ensure `npm run lint` passes before submitting
 
 ---
 
@@ -96,4 +97,3 @@ This project is licensed under the **MIT License** — see [LICENSE](./LICENSE) 
 ## Contributors
 
 Thanks to all the wonderful contributors ❤️
-
