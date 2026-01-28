@@ -223,8 +223,8 @@ p.is-editor-empty:first-child::before {
 }
 
 .dots-btn span {
-  width: 4px;
-  height: 4px;
+  width: 3px;
+  height: 3px;
   background: var(--black);
   border-radius: 50%;
 }
@@ -237,10 +237,10 @@ p.is-editor-empty:first-child::before {
 .dropdown-menu {
   display: none;
   position: fixed;
-  right: 13px;
+  right: 15px;
   top: 40px;
   background: var(--white);
-  border-radius: 10px;
+  border-radius: 11px;
   min-width: 100px;
   /* softer, layered shadow */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);

@@ -2,16 +2,18 @@ async function doAction(editor, t) {
   if (!editor) {
     return;
   }
-  switch (t?.target?.id) {
-    case 'new':
-    case 'clear':
-      editor?.commands?.clearContent();
-      editor?.commands?.focus();
-      break;
-    case 'copy':
-      editor.commands.focus();
-      await navigator.clipboard.writeText(editor?.getText());
-      break;
+  const id = t?.target?.id;
+  if (!id) {
+    return;
+  }
+
+  if (id === 'new' || id === 'clear') {
+    editor?.commands?.clearContent();
+    editor?.commands?.focus();
+  }
+  if (id === 'copy') {
+    editor.commands.focus();
+    await navigator.clipboard.writeText(editor?.getText());
   }
 }
 
