@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Block Editor",
+  "short_name": "Block Editor",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",

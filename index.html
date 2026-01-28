@@ -1,80 +1,108 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blank Editor</title>
-    <link rel="stylesheet" href="src/style.css" />
-    <!-- Standard favicons -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="/favicon/favicon-96x96.png"
-    />
-    <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" />
-    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Blank Editor</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <!-- Standard favicons -->
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="96x96"
+    href="/favicon/favicon-96x96.png"
+  />
+  <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 
-    <!-- Apple touch icon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/favicon/apple-touch-icon.png"
-    />
+  <!-- Apple touch icon -->
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/favicon/apple-touch-icon.png"
+  />
 
-    <!-- Web app manifest (for Android / PWA) -->
-    <link rel="manifest" href="/favicon/site.webmanifest" />
-    <link
-      rel="icon"
-      sizes="192x192"
-      href="/favicon/web-app-manifest-192x192.png"
-    />
-    <link
-      rel="icon"
-      sizes="512x512"
-      href="/favicon/web-app-manifest-512x512.png"
-    />
+  <!-- Web app manifest (for Android / PWA) -->
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+  <link
+    rel="icon"
+    sizes="192x192"
+    href="/favicon/web-app-manifest-192x192.png"
+  />
+  <link
+    rel="icon"
+    sizes="512x512"
+    href="/favicon/web-app-manifest-512x512.png"
+  />
 
-    <!-- Safari pinned tab -->
-    <link rel="mask-icon" href="/favicon/favicon.svg" color="#5bbad5" />
+  <!-- Safari pinned tab -->
+  <link rel="mask-icon" href="/favicon/favicon.svg" color="#5bbad5" />
 
-    <!-- Windows tile -->
-    <meta name="msapplication-TileColor" content="#2b5797" />
-    <meta name="msapplication-TileImage" content="/favicon/favicon-96x96.png" />
+  <!-- Windows tile -->
+  <meta name="msapplication-TileColor" content="#2b5797" />
+  <meta name="msapplication-TileImage" content="/favicon/favicon-96x96.png" />
 
-    <!-- Theme color for mobile browsers -->
-    <meta name="theme-color" content="#ffffff" />
-  </head>
-  <body>
-    <div class="header no-select">
-      <div class="top-left">
-        <a href="/blank-editor" class="brand no-select">
-          <img
-            src="/favicon/apple-touch-icon.png"
-            alt="Blank Editor"
-            class="logo"
-          />
-          <span class="no-select">Blank Editor</span>
-        </a>
-      </div>
-    </div>
-    <div class="top-right">
-      <button class="dots-btn" aria-label="More options">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-    <div class="dropdown-menu no-select">
-      <a href="#" id="new">New</a>
-      <a href="#" id="copy">Copy</a>
-      <div class="dropdown-divider"></div>
-      <a href="#" id="clear" class="danger">Clear</a>
-    </div>
-    <div class="editor-wrapper">
-      <div class="placeholder"></div>
-      <div id="editor"></div>
-    </div>
-    <script type="module" src="src/main.js"></script>
-  </body>
+  <!-- Theme color for mobile browsers -->
+  <meta name="theme-color" content="#ffffff" />
+
+  <meta
+    name="description"
+    content="Blank Editor is a minimal, distraction-free text editor designed for clean writing and focused editing. Open-source, fast, responsive, and Markdown-ready."
+  />
+  <meta
+    name="keywords"
+    content="Blank Editor, minimal text editor, distraction free editor, markdown editor, writing app, clean editor, open source editor"
+  />
+  <link rel="canonical" href="https://puni9869.github.io/blank-editor/" />
+
+  <!-- Open Graph (Facebook, LinkedIn, Slack) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Blank Editor – Minimal Text Editor for Focused Writing" />
+  <meta
+    property="og:description"
+    content="A minimal, premium-grade web editor for clean writing and editing. Fast, responsive, and open-source."
+  />
+  <meta property="og:url" content="https://puni9869.github.io/blank-editor/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blank Editor – Minimal Text Editor" />
+  <meta
+    name="twitter:description"
+    content="Distraction-free, minimal editor for clean writing. Open-source and beautifully simple."
+  />
+
+</head>
+<body>
+<div class="header no-select">
+  <div class="top-left">
+    <a href="/blank-editor" class="brand no-select">
+      <img
+        src="/favicon/apple-touch-icon.png"
+        alt="Blank Editor"
+        class="logo"
+      />
+      <span class="no-select">Blank Editor</span>
+    </a>
+  </div>
+</div>
+<div class="top-right">
+  <button class="dots-btn" aria-label="More options">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</div>
+<div class="dropdown-menu no-select">
+  <a href="#" id="new">New</a>
+  <a href="#" id="copy">Copy</a>
+  <div class="dropdown-divider"></div>
+  <a href="#" id="clear" class="danger">Clear</a>
+</div>
+<div class="editor-wrapper">
+  <div class="placeholder"></div>
+  <div id="editor"></div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
 </html>
