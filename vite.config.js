@@ -20,8 +20,8 @@ export default defineConfig({
         description: 'A minimal, distraction-free text editor',
 
         // ⚠️ MUST include base path
-        start_url: '/blank-editor/',
-        scope: '/blank-editor/',
+        'start_url': '/blank-editor/',
+        'scope': '/blank-editor/',
 
         display: 'standalone',
         background_color: '#ffffff',
