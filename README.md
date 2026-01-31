@@ -45,7 +45,8 @@ Check out the live demo here: [Blank Editor Demo](https://puni9869.github.io/bla
 ```bash
 git clone https://github.com/puni9869/blank-editor.git
 cd blank-editor
-npm install
+npm install -g pnpm
+pnpm install
 ```
 
 ---
@@ -55,7 +56,7 @@ npm install
 ### Development
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 This opens the editor locally at `http://localhost:5173`.
@@ -63,16 +64,16 @@ This opens the editor locally at `http://localhost:5173`.
 ### Build for Production
 
 ```bash
-npm run build
-npm run preview
+pnpm run build
+pnpm run preview
 ```
 
 ### Format and Lint
 
 ```bash
-npm run format       # Prettier formatting
-npm run lint         # ESLint checks
-npm run lint:fix     # Auto-fix linting issues
+pnpm run format       # Prettier formatting
+pnpm run lint         # ESLint checks
+pnpm run lint:fix     # Auto-fix linting issues
 ```
 
 ---
