@@ -1,18 +1,19 @@
 import { defineConfig } from 'vite';
+import { visualizer } from 'rollup-plugin-visualizer';
 
 export default defineConfig({
   base: '/blank-editor/',
+  plugins: [visualizer({ open: false })],
   build: {
     outDir: 'docs',
-
+    sourcemap: false,
     esbuild: {
       drop: ['console', 'debugger'],
     },
-
     rollupOptions: {
-      treeshake: 'recommended',
+      treeshake: 'safest',
       output: {
-        inlineDynamicImports: true,
+        inlineDynamicImports: false,
       },
     },
 

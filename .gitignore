@@ -12,6 +12,9 @@ build/
 out/
 .vite/
 
+## RollUp visual of node modules
+stats.html
+
 # --------------------
 # Logs
 # --------------------
