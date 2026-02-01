@@ -1,4 +1,4 @@
-import { openSaveModal } from './dropdown.js';
+import { closeSaveModal, openSaveModal } from './dropdown.js';
 
 function throttle(fn, limit) {
   let lastCall = 0;
@@ -17,6 +17,8 @@ function handleKey(event, editor) {
   const isCtrlOrCmd = event.ctrlKey || event.metaKey;
   if (isCtrlOrCmd && (event.key === 's' || event.key === 'S')) {
     openSaveModal(editor);
+  } else if (event.key === 'Escape') {
+    closeSaveModal();
   }
 }
 

@@ -37,11 +37,6 @@ export function openSaveModal(editor) {
       e.preventDefault();
       saveFile(editor);
     }
-
-    if (e.key === 'Escape') {
-      e.preventDefault();
-      closeSaveModal();
-    }
   };
 
   setTimeout(() => {
@@ -81,7 +76,7 @@ function downloadTxt(filename, text) {
 }
 
 
-function closeSaveModal() {
+export function closeSaveModal() {
   const modal = document.getElementById('saveModal');
   if (modal) modal.classList.remove('modal-backdrop-show');
 
