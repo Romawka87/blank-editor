@@ -94,7 +94,7 @@ body {
    Editor Container
 -------------------- */
 .editor {
-    max-width: 760px; /* slightly narrower = more focus */
+    max-width: 860px; /* slightly narrower = more focus */
     min-height: calc(100vh - 160px); /* top + bottom margins */
     background: var(--white);
     margin: 70px auto 96px; /* more bottom breathing room */
@@ -205,7 +205,7 @@ p.is-editor-empty:first-child::before {
 /* Drop down*/
 .top-right {
     position: fixed;
-    top: 6px;
+    top: 5px;
     right: 16px;
 }
 
@@ -291,7 +291,12 @@ p.is-editor-empty:first-child::before {
 .top-left {
     position: fixed;
     left: 16px;
-    top: 8px;
+    top: 9px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    justify-items: center;
+    justify-content: center;
 }
 
 .brand {
@@ -412,4 +417,81 @@ p.is-editor-empty:first-child::before {
     color: var(--black);
     background: var(--gray-15);
     border-radius: 999px;
+}
+
+/* Toolbar container */
+.top-toolbar {
+    height: 70%;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* Buttons */
+.top-toolbar button {
+    border: none;
+    background: transparent;
+    width: 35px;
+    height: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--black);
+}
+
+.top-toolbar button:hover {
+    background: var(--gray-2);
+}
+
+.top-toolbar button.active {
+    background: var(--gray-4);
+    color: var(--black);
+}
+
+/* Divider */
+.top-toolbar .divider {
+    width: 2px;
+    height: 18px;
+    background: var(--gray-3);
+    margin: 0 4px;
+}
+
+.align-group {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 30px;
+}
+
+.align-group button {
+    border: none;
+    background: transparent;
+    height: 100%;
+    font-size: 13px;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.align-group button:hover {
+    background: var(--gray-2);
+}
+
+.align-group button.active {
+    background: var(--gray-4);
+    color: var(--black);
+}
+
+button[data-cmd="task"] {
+    width: fit-content;
+}
+
+@media (max-width: 900px) {
+    /* Hide the toolbar */
+    .top-toolbar {
+        display: none;
+    }
 }

@@ -3,8 +3,11 @@ import StarterKit from '@tiptap/starter-kit';
 import Placeholder from '@tiptap/extension-placeholder';
 import Highlight from '@tiptap/extension-highlight';
 import Typography from '@tiptap/extension-typography';
-import Code from '@tiptap/extension-code';
+import TextAlign from '@tiptap/extension-text-align';
+import TaskList from '@tiptap/extension-task-list';
+import TaskItem from '@tiptap/extension-task-item';
 import { loadMenu } from './dropdown';
+import { loadTopToolbar } from './toolbar.js';
 
 const STORAGE_KEY = 'blank-editor:v1';
 
@@ -50,12 +53,19 @@ const editor = new Editor({
       codeBlock: true,
       blockquote: true,
       horizontalRule: true,
+      strike: true,
+      orderedList: true,
     }),
-
+    TaskList,
+    TaskItem.configure({
+      nested: true, // allows sub tasks
+    }),
     Placeholder.configure({ placeholder: 'Whats on your mind...' }),
     Highlight,
     Typography,
-    Code,
+    TextAlign.configure({
+      types: ['heading', 'paragraph'],
+    }),
   ],
 
   content: loadContent(),
@@ -91,4 +101,5 @@ if (import.meta.env?.DEV) {
 }
 window.addEventListener('load', () => {
   loadMenu(editor);
+  loadTopToolbar(editor);
 });
