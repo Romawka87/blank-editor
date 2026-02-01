@@ -3,6 +3,7 @@ import StarterKit from '@tiptap/starter-kit';
 import Placeholder from '@tiptap/extension-placeholder';
 import Highlight from '@tiptap/extension-highlight';
 import Typography from '@tiptap/extension-typography';
+import Code from '@tiptap/extension-code';
 import { loadMenu } from './dropdown';
 
 const STORAGE_KEY = 'blank-editor:v1';
@@ -54,6 +55,7 @@ const editor = new Editor({
     Placeholder.configure({ placeholder: 'Whats on your mind...' }),
     Highlight,
     Typography,
+    Code,
   ],
 
   content: loadContent(),
