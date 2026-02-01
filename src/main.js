@@ -4,8 +4,6 @@ import Placeholder from '@tiptap/extension-placeholder';
 import Highlight from '@tiptap/extension-highlight';
 import Typography from '@tiptap/extension-typography';
 import TextAlign from '@tiptap/extension-text-align';
-import TaskList from '@tiptap/extension-task-list';
-import TaskItem from '@tiptap/extension-task-item';
 import { loadMenu } from './dropdown';
 import { loadTopToolbar } from './toolbar.js';
 import { registerKey } from './keyboard_shortcut.js';
