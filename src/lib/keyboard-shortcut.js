@@ -13,7 +13,7 @@ function throttle(fn, limit) {
 
 function handleKey(event, editor) {
   // Optional: prevent default behavior (like scrolling)
-  const isCtrlOrCmd = event.ctrlKey || event.metaKey;
+  const isCtrlOrCmd = event.ctrlKey || event.metaKey && !event.shiftKey;
   if (isCtrlOrCmd && (event.key === 's' || event.key === 'S')) {
     event.stopPropagation();  // Prevent event bubbling
     event.preventDefault();
